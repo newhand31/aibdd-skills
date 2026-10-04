@@ -1,0 +1,34 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "newhand31-aibdd",
+  "owner": {
+    "name": "newhand31",
+    "url": "https://github.com/newhand31"
+  },
+  "metadata": {
+    "description": "AIBDD skills for Claude Code — acceptance-driven development as installable skills instead of copied directories.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "aibdd-skills",
+      "source": "./",
+      "description": "Acceptance-driven development skills: boundary-aware spec discovery, executable acceptance criteria, and disciplined RED -> GREEN -> REFACTOR execution. Early access — one skill published while the library is consolidated from three drifted copies into this single source of truth.",
+      "version": "0.1.0",
+      "category": "engineering",
+      "author": {
+        "name": "newhand31",
+        "url": "https://github.com/newhand31"
+      },
+      "homepage": "https://github.com/newhand31/aibdd-skills",
+      "repository": "https://github.com/newhand31/aibdd-skills",
+      "license": "MIT",
+      "keywords": [
+        "bdd",
+        "acceptance-testing",
+        "spec-driven",
+        "tdd"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# Skill run side-effects — this repo tracks the skills tree, not its output
+specs/
+.quality/
+skills/**/.quality/
+
+# Local Claude Code state (not part of the plugin)
+.claude/settings.local.json

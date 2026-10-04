@@ -1,0 +1,19 @@
+{
+  "name": "aibdd-skills",
+  "version": "0.1.0",
+  "description": "Acceptance-driven development skills for Claude Code: boundary-aware spec discovery, executable acceptance criteria, and disciplined RED -> GREEN -> REFACTOR execution across .NET, Java and Python stacks.",
+  "author": {
+    "name": "newhand31",
+    "url": "https://github.com/newhand31"
+  },
+  "homepage": "https://github.com/newhand31/aibdd-skills",
+  "repository": "https://github.com/newhand31/aibdd-skills",
+  "license": "MIT",
+  "keywords": [
+    "bdd",
+    "acceptance-testing",
+    "skills",
+    "spec-driven",
+    "tdd"
+  ]
+}

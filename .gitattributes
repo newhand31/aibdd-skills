@@ -1,0 +1,11 @@
+# Normalize to LF in the repository and in every checkout.
+# Without this, core.autocrlf on Windows rewrites working copies to CRLF and
+# every file reads as modified against a clone made on another platform — the
+# drift that made three copies of this library look 100% divergent when the
+# real difference was one broadcast edit.
+* text=auto eol=lf
+
+# Keep binaries byte-exact if any are ever added.
+*.png binary
+*.jpg binary
+*.pdf binary
