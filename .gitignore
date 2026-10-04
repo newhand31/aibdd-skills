@@ -10,3 +10,9 @@ skills/**/.quality/
 
 # Local Claude Code state (not part of the plugin)
 .claude/settings.local.json
+
+# Internal planning notes — kept local for now. This repo is public; publishing
+# the decision log is a separate call, and un-publishing it would mean rewriting
+# public history.
+state/
+.claude/
