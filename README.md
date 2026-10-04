@@ -27,11 +27,15 @@ Skill content is written in Traditional Chinese; skill names, frontmatter and fi
 
 ## Roadmap
 
-The library being consolidated here is 93 skills across three drifted copies. Consolidation collapses them rather than moving them verbatim: 56 of the 93 are stack-bound, and 42 of those are the same 14 steps written out three times (.NET / Java / Python). Those become 14 skills with per-stack variant references, which is why the target is roughly 65 skills, not 93.
+The library being consolidated here is 92 skills, in three copies that had drifted apart. 59 are stack-bound, and 51 of those form a 13-step × 4-suite matrix: .NET e2e, Java e2e, Python e2e, Python unit.
 
-- [x] Plugin skeleton + install path verified against `claude plugin validate --strict`
-- [ ] Collapse the 14 × 3 stack triples into 14 skills + `references/variants/<stack>.md`
-- [ ] Move the 37 stack-agnostic skills
+Measuring that matrix before moving it changed the plan. Across suites, the same step shares very little text — character similarity runs 0.13 to 0.78, against 0.91–0.96 for one skill compared between two drifted copies and 0.13 for two unrelated skills. Only `control-flow` is close enough to merge (0.94–0.98 across the three non-.NET suites). So these are not one step written four times; they are four documents that happen to share a name, and hiding them behind a single skill would add indirection without removing content.
+
+Consolidation therefore moves what is genuinely shared and leaves the rest as separate skills.
+
+- [x] Plugin skeleton, and the install path verified end to end — `marketplace add` → `install` → the skill reaching a live session's skill index
+- [ ] Move the 33 stack-agnostic skills
+- [ ] Ship the .NET e2e path, which is the one the orchestrating skills (`bdd-cycle`, `mvp-run`, `mvp-acceptance-tests`) actually delegate to. The Java and Python suites have no inbound references and nothing selects a stack at runtime, so their scope is still open
 - [ ] Switch the source projects over to installing this plugin
 
 ## Not affiliated with AIxBDD
